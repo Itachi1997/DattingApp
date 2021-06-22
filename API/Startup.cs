@@ -49,7 +49,7 @@ namespace API
             
             app.UseCors(opt => opt
             .AllowAnyHeader()
-            .AllowAnyHeader()
+            .AllowAnyMethod()
             .WithOrigins("https://localhost:4200"));
 
             app.UseAuthentication();
